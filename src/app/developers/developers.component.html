@@ -1,0 +1,9 @@
+<h2>Developers</h2>
+
+<ul class="developers">
+  <li *ngFor="let developer of developers">
+    <a routerLink="/detail/{{developer.id}}">
+      <span class="badge">{{developer.name}}</span> {{developer.project}} {{developer.assigned}}
+    </a>
+  </li>
+</ul>

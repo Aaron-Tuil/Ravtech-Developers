@@ -1,0 +1,19 @@
+<div *ngIf="developer">
+  <h2>{{ developer.name | uppercase }} Details</h2>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="developer.name" placeholder="name">
+    </label>
+  </div>
+  <div>
+    <label>Project:
+      <input [(ngModel)]="developer.project" placeholder="project">
+    </label>
+  </div>
+  <div>
+    <label>Assigned:
+      <input type="checkbox" [(ngModel)]="developer.assigned">
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>
